@@ -17,27 +17,6 @@ body{
 
 /*NAVIGATION*/
 
-
-.navbar-light .navbar-brand {
-    color: rgb(234 220 220);
-    font-size: 3rem;
-    font-weight: 900;
-    
-}
-
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: rgb(234 220 220);
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(234 220 220);
-    font-size: 2rem;
-    
-}
-
-
 .custom-navbar{
     padding: 0px 30px;
 }
@@ -71,18 +50,14 @@ body{
 
 .vid-placeholder{
     position: relative;
-    width: 100%;
-    min-height: 850px;
-    z-index: -1;
     border-color: 5px solid rgb(164, 97, 226);
     overflow: hidden;
 }
 .vid-bg{
     position: absolute;
     width: 100%;
-    top:-80px;
+    top:0;
     left:0;
-    z-index: -1;
 }
 
 /* ABOUT US */
@@ -100,10 +75,11 @@ h1{
 
 .about-img{
     padding-right: 2rem;
+
     
 }
 
 .about-img img{
-    width: 600px;
+    width: 100%;
     height: auto;
 }
