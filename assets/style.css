@@ -15,6 +15,10 @@ body{
     font-weight: 400;
 }
 
+section{
+    padding-top: 2rem;
+}
+
 /*NAVIGATION*/
 
 .custom-navbar{
@@ -36,13 +40,15 @@ body{
 
 .home-content{
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     color: rgb(234 220 220);
 }
 
 .home-content > h1 h2 button{
     font-size: 10rem;
     padding: 2rem 0;
+    
 }
 
 
@@ -58,6 +64,7 @@ body{
     width: 100%;
     top:0;
     left:0;
+    z-index: -5;
 }
 
 /* ABOUT US */
