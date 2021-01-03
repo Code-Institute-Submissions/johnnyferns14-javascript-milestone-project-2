@@ -12,159 +12,142 @@
         })();
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel ="stylesheet" href="./assets/style.css">
+    <link rel ="stylesheet" href="./assets/style1.css">
     
 </head>
 <body>
-    <!-- VIDEO -->
-
-<div class="wrapper">
-    <div class="vid-placeholder">
-    <video class="vid-bg" autoplay>
-        <source src="./assets/videos/Coast.mp4" type="video/mp4">
-    </video>
-         
-    <!-- NAVIGATION BAR -->
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">TRAVEL HUB</a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+                    <!-- NAVIGATION BAR -->
+                    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">Travel Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="trips.html">Trips</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="vid-placeholder">
+            <video class ="vid-bg" src="./assets/videos/Coast.mp4" autoplay loop></video>
+        </div>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-us">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-us">Contact</a>
-          </li>
+        <section id="about-us">
+            <h1>About Us</h1>
+            <div class="content-wrapper">
+                <div class="about-img">
+                    <img src="./assets/images/compass_travel.jpg" alt="travel_agent">
+                </div>
+                <div class="about-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate distinctio consectetur consequatur nemo placeat nisi, odio, itaque provident amet suscipit sequi earum adipisci blanditiis cumque sint excepturi ipsum quas!</p>
         
-          <li class="nav-item nav-border">
-            <a class="nav-link" target="_blank" href="trips.html">Trips</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-      <div class="home-content">
-            <h1>Need a break?</h1>
-            <h2>Jump right in!!!</h2>
-            <button class= "trips"><a target="_blank" href="trips.html">CLICK HERE</a></button>
-        </div> 
-
-    </div>
- </div>   
-   <!-- ABOUT US -->
-
-<section id="about-us">
-    <h1>About Us</h1>
-    <div class="content-wrapper">
-        <div class="about-img">
-            <img src="./assets/images/compass_travel.jpg" alt="travel_agent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis sit blanditiis eius dolor sunt dignissimos repudiandae, corporis enim explicabo rem perspiciatis ipsa in aliquid illum possimus deserunt ratione nisi.</p>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, molestias ratione? Excepturi quibusdam numquam ex debitis. Odit facilis autem et vero, repellat magni quaerat accusantium, optio dignissimos, consectetur doloremque eum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="services">
+            <h1>Services</h1>
+            <h3>Flight Information</h3>
+        
+        <div class="card-flex">
+            <div class="card" style="width: 100%;">
+                <img src="./assets/images/Eiffel.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">France</p>
+                </div>
+            </div>
+        
+            <div class="card" style="width: 100%;">
+                <img src="./assets/images/Taj-Mahal.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">India</p>
+                </div>
+            </div>
+        
+            <div class="card" style="width: 100%;">
+                <img src="./assets/images/venice.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Italy</p>
+                </div>
+            </div>
         </div>
-        <div class="about-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate distinctio consectetur consequatur nemo placeat nisi, odio, itaque provident amet suscipit sequi earum adipisci blanditiis cumque sint excepturi ipsum quas!</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis sit blanditiis eius dolor sunt dignissimos repudiandae, corporis enim explicabo rem perspiciatis ipsa in aliquid illum possimus deserunt ratione nisi.</p>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, molestias ratione? Excepturi quibusdam numquam ex debitis. Odit facilis autem et vero, repellat magni quaerat accusantium, optio dignissimos, consectetur doloremque eum.
-            </p>
+        
+        
+            <h3>Hotel Information</h3>
+        <div class="card-flex">
+            <div class="card" style="width: 100%;">
+                <img src="./assets/images/Hotel-Elysee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Hotel Elysee</p>
+                </div>
+            </div>
+        
+            <div class="card" style="width: 100%;">
+                <img src="./assets/images/Taj-Hotel.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Taj Hotel</p>
+                </div>
+            </div>
+        
+            <div class="card" style="width: 100%;">
+                <img src="./assets/images/Hotel-Quirinale.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Hotel Quirinale</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-
-
-<section id="services">
-    <h1>Services</h1>
-    <h3>Flight Information</h3>
-
-<div class="card-flex">
-    <div class="card" style="width: 100%;">
-        <img src="./assets/images/Eiffel.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">France</p>
-        </div>
-    </div>
-
-    <div class="card" style="width: 100%;">
-        <img src="./assets/images/Taj-Mahal.gif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">India</p>
-        </div>
-    </div>
-
-    <div class="card" style="width: 100%;">
-        <img src="./assets/images/venice.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Italy</p>
-        </div>
-    </div>
-</div>
-
-
-    <h3>Hotel Information</h3>
-<div class="card-flex">
-    <div class="card" style="width: 100%;">
-        <img src="./assets/images/Hotel-Elysee.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Hotel Elysee</p>
-        </div>
-    </div>
-
-    <div class="card" style="width: 100%;">
-        <img src="./assets/images/Taj-Hotel.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Taj Hotel</p>
-        </div>
-    </div>
-
-    <div class="card" style="width: 100%;">
-        <img src="./assets/images/Hotel-Quirinale.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Hotel Quirinale</p>
-        </div>
-    </div>
-</div>
+            
+            
+            
+        
+        
+        
+        
+        
+        </section>
+        
+        <section id="contact-us">
+            <h1>Contact</h1>
+            <div class="mb-3">
+                <label for="nameInput" class="form-label">Name: </label>
+                <input type="email" class="form-control" id="nameInput" placeholder="Your first & last name">
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address: </label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="queryTextarea" class="form-label">Your Query: </label>
+                <textarea class="form-control" id="queryTextarea" rows="6"></textarea>
+              </div>
+        
+        
+        
+        
+        </section>
+ 
     
-    
-    
-
-
-
-
-
-</section>
-
-<section id="contact-us">
-    <h1>Contact</h1>
-    <div class="mb-3">
-        <label for="nameInput" class="form-label">Name: </label>
-        <input type="email" class="form-control" id="nameInput" placeholder="Your first & last name">
-      </div>
-      <div class="mb-3">
-        <label for="emailInput" class="form-label">Email address: </label>
-        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="queryTextarea" class="form-label">Your Query: </label>
-        <textarea class="form-control" id="queryTextarea" rows="6"></textarea>
-      </div>
-
-
-
-
-</section>
-  
-    
-    
-
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="app.js"></script>
     
 </body>
