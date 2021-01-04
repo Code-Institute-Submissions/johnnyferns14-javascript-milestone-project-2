@@ -101,3 +101,27 @@ h1{
     text-align: center;
     margin-top: 2rem;
 }
+
+
+@media screen and (max-width:697px){
+
+    .content-wrapper {
+        display: block;
+        padding: 1rem;
+    }
+    .card-flex {
+        display: block;
+        padding: 1rem;
+    }
+    .card {
+        margin: 20px 0px;
+    }
+    .row{
+    margin-left: 30px;
+    margin-right: 30px;
+    }
+    .about-img {
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+}
