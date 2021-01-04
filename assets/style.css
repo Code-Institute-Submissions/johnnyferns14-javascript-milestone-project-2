@@ -30,6 +30,10 @@ section{
     z-index: -5;
 }
 
+.navbar-bg{
+    background-color: rgb(12, 93, 131);
+}
+
 h1{
     text-align: center;
 }
