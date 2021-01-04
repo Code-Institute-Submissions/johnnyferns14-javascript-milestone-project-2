@@ -34,6 +34,28 @@ section{
     background-color: rgb(12, 93, 131);
 }
 
+
+.navbar-brand{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.nav-item{
+    text-transform: uppercase;
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(204, 218, 215, 0.952);
+}
+
+
 h1{
     text-align: center;
 }
