@@ -13,7 +13,7 @@ body{
 }
 
 section{
-    padding-top: 2rem;
+    padding-top: 3.2rem;
 }
 
 .vid-placeholder{
@@ -21,6 +21,7 @@ section{
     height: 500px;
     border-color: 5px solid rgb(164, 97, 226);
     overflow: hidden;
+    margin-top: 3.2rem;
 }
 .vid-bg{
     position: absolute;
@@ -28,6 +29,10 @@ section{
     top:-1rem;
     left:0;
     z-index: -5;
+}
+
+.navbar{
+    padding: 0;
 }
 
 .navbar-bg{
@@ -44,10 +49,14 @@ section{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+    margin-right: 0px;
+    margin-left: 1rem;
 }
 
 .nav-item{
     text-transform: uppercase;
+    margin-right: 10px;
+    padding-right: 0.7rem;
     
 }
 
