@@ -88,3 +88,8 @@ h1{
 .card{
     margin: 20px;
 }
+
+.btn-center{
+    text-align: center;
+    margin-top: 2rem;
+}
