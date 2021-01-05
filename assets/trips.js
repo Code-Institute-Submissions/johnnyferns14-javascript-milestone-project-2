@@ -28,6 +28,7 @@ function getCarrier(carrierName) {
         carrName  += `<p>${id}${name}</p>`;
 
     });
+    $("#flight-results").empty().append(carrName);
 };
 
 function displayInfo(quotes) {
@@ -41,7 +42,7 @@ function displayInfo(quotes) {
         flights += `<p>${price}${originId}</p>`;
 
     });
-    $("#flight-results").empty().append(flights);
+    // $("#flight-results").empty().append(flights);
 };
 
 async function getFlightData(fetchId) {
