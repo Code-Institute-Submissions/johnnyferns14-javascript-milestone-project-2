@@ -76,15 +76,14 @@ h1{
     padding: 1rem;
 }
 
-.about-img{
-    padding-right: 2rem;
-
-    
-}
-
 .about-img img{
     width: 100%;
     height: auto;
+}
+
+.about-content{
+    margin-left: 1rem;
+    width: 85%;
 }
 
 .card-flex{
@@ -130,7 +129,7 @@ h1{
     margin-right: 30px;
     }
     .about-img {
-        padding-right: 2rem;
+        
         padding-bottom: 2rem;
     }
 }
