@@ -26,7 +26,7 @@ section{
 .vid-bg{
     position: absolute;
     width: 100%;
-    top:-1rem;
+    top: 0;
     left:0;
     z-index: -5;
 }
@@ -93,6 +93,8 @@ h1{
     text-align: center;
 }
 
+/* ABOUT US */
+
 .content-wrapper{
     display: flex;
     justify-content: center;
@@ -110,15 +112,25 @@ h1{
     width: 85%;
 }
 
+/* SERVICES */
+
+
+#services h3{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    text-decoration: underline;
+}
 .card-flex{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    padding-top: 0;
 }
 
 .card{
     margin: 20px;
+    margin-top: 2px;
 }
 
 
@@ -136,6 +148,11 @@ h1{
 
 
 @media screen and (max-width:697px){
+
+    .vid-placeholder{
+        height: 200px;
+    }
+
 
     .content-wrapper {
         display: block;
