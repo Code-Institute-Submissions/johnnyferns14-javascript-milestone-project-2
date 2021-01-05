@@ -1,0 +1,19 @@
+function sendMail(contactDetails){
+
+let templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
+ 
+emailjs.send('service_dq6by94', 'flightdetails', {
+        "from_name" : contactDetails.nameInput.value,
+        "user_email": contactDetails.inputEmail.value,
+        "message" : contactDetails.queryTextarea.value,
+    })
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+    return false;
+}
