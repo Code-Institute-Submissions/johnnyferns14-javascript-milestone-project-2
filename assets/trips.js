@@ -18,21 +18,31 @@ $(document).ready(function () {
     });
 });
 
+function getCarrier(carrierName) {
+    let carrName = "";
+    carrierName.forEach(function (carrier) {
+        
+        console.log(carrier);
+        const id = carrier.CarrierId;
+        const name = carrier.Name;
+        carrName  += `<p>${id}${name}</p>`;
+
+    });
+};
+
 function displayInfo(quotes) {
     let flights = "";
     quotes.forEach(function (quote) {
-        // quote.forEach(function(info){
+        
         console.log(quote);
         console.log(quote.QuoteId);
         const price = quote.MinPrice;
         const originId = quote.OutboundLeg.OriginId;
-        //console.log(originId, price);
-        // });
-        flights += `<p>${price}</p>`
+        flights += `<p>${price}${originId}</p>`;
 
     });
     $("#flight-results").empty().append(flights);
-}
+};
 
 async function getFlightData(fetchId) {
     const res = await fetch(fetchId, {
@@ -43,9 +53,13 @@ async function getFlightData(fetchId) {
         }
     });
     const data = await res.json();
+    console.log(data);
     const quotes = data.Quotes;
-
+    const carrierName = data.Carriers;
+    
+    getCarrier(carrierName);
     displayInfo(quotes);
+    
 
     
 
