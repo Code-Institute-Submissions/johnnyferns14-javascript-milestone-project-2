@@ -164,6 +164,13 @@ h1{
 }
 
 
+/* TRIPS */
+
+.hero-image{
+    width: 100%;
+}
+
+
 @media screen and (max-width:697px){
 
     .vid-placeholder{

@@ -12,26 +12,25 @@
 <body>
     <!-- NAVIGATION BAR -->
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-bg">
         <a class="navbar-brand" href="#">Travel Hub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto custom-navbar">
-
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -49,21 +48,25 @@
             <div class="search-area">
                 <div class="search-content">
                     <div class="point-of-travel">
-                    <label id="origin">Origin: </label>
-                    <input type="text" name="origin" id="originplace">
-                    <label id="destination">Destination: </label>
-                    <input type="text" name="destination" id="destinationplace">
-                </div>
-                <div class="travel-dates">
-                    <label id="date-dep">Date of Departure: </label>
-                    <input type="text" name="date-dep" id="dateofdep">
-                    <label id="date-arr">Date of Arrival: </label>
-                    <input type="text" name="date-arr" id="dateofarr">
-                    <button id="search">Search</button>
+                        <label id="origin1">Origin: </label>
+                        <input type="text" name="origin" id="origin">
+                        <label id="destination1">Destination: </label>
+                        <input type="text" name="destination" id="destination">
+                        <label id="currency1">Currency </label>
+                        <input type="text" name="currency" id="currency">
+                   </div>
+                    <div class="travel-dates">
+                        <label id="date-dep1">Date of Departure: </label>
+                        <input type="text" name="date-dep" id="date-dep">
+                        <label id="date-arr1">Date of Arrival: </label>
+                        <input type="text" name="date-arr" id="date-arr">
+                        <button id="confirm">Confirm</button>
                     
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="search-results">
             
@@ -71,6 +74,54 @@
 
 
       </section>
+
+             <footer class="page-footer footercustom">
+
+            <div class="container">
+            <div class="row">
+  
+                <div class="col-md-12">
+                    <div class="flex-center text-footer">
+                        <p>For future events and updates, follow us on: </p>
+                        <div class="text-center">
+                            <!-- Facebook -->
+                            <a class="fb-ic" href="https://www.facebook.com" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic" href="https://www.twitter.com" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <!--Linkedin -->
+                            <a class="li-ic" href="https://www.linkedin.com" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic" href="https://www.instagram.com" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        </div>
+                        </div>
+                        <!-- Grid column -->
+                
+                    </div>
+                    <!-- Grid row-->
+                
+                    </div>
+                    <!-- Footer Elements -->
+                
+    
+    <div class="footer-copyright text-center py-3 cust-text"> Created by::
+      <a href="https://google.com">johnnyferns</a>
+    </div>
+    
+  
+  </footer>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
 
 <script src="./assets/trips.js"></script>
 </body>
