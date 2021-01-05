@@ -146,6 +146,23 @@ h1{
     margin-top: 2rem;
 }
 
+/* FOOTER */
+
+.footercustom {
+    background-color: rgb(12, 93, 131);
+    color: rgba(0,0,0,.9);
+    
+}
+
+.text-footer p {
+    font-family: 'Baloo Paaji 2', cursive;
+    text-align: center;
+    color: rgb(204, 218, 215);
+    font-size: 18px;
+    display: block;
+    padding-top: 20px;
+}
+
 
 @media screen and (max-width:697px){
 
