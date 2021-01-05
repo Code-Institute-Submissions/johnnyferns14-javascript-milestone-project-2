@@ -7,7 +7,6 @@ $(document).ready(function(){
             let originplace = $("#origin").val();
             let destinationplace = $("#destination").val();
             let outboundpartialdate = $("#date-dep").val();
-            let inboundpartialdate = $("#date-arr").val();
             let currency = $("#currency").val();
         
             let fetchId = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/${currency}/en-US/${originplace}-sky/${destinationplace}-sky/${outboundpartialdate}?inboundpartialdate=${inboundpartialdate}`;
