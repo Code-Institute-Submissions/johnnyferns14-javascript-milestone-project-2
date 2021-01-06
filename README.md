@@ -34,7 +34,7 @@ The site with travel information relating to flights.
     -   #### Typography
         -   The Baloo Paaji 2 font is the main font used throughout the whole website with cursive as the fallback font in case for any reason the font isn't being imported into the site correctly. The font is unique and gives a feeling of calmness. Also, it is both attractive and appropriate for the travel site.
     -   #### Imagery
-        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+        -   Video of a coast with mountains has been added as the background giving a feel of the place from the sky. It gives a feeling of travel, holiday, excitement.
 
 *   ### Wireframes
 
@@ -46,7 +46,7 @@ The site with travel information relating to flights.
 
 ## Features
 
--   Responsive on all device sizes
+-   The website is responsive on all device sizes ranging from desktop to tablet & mobiles.
 
 -   Interactive elements
 
@@ -59,10 +59,8 @@ The site with travel information relating to flights.
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+1. [Bootstrap 4.0:](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
@@ -75,8 +73,8 @@ The site with travel information relating to flights.
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
     - Photoshop was used to create the logo, resizing images and editing photos for the website.
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+1. [Figma:](https://balsamiq.com/)
+    - Figma was used to create the [wireframes](https://github.com/) during the design process.
 
 ## Testing
 
@@ -206,48 +204,24 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+-   [Bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+-   [jQuery:](https://jquery.com/)
+ jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+
 
 ### Content
 
 -   All content was written by the developer.
 
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
 
 ### Media
 
--   All Images were created by the developer.
+-   Images were found freely from the internet. The background video was downloaded from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15527">Pixabay</a> work of <a href="https://pixabay.com/users/wowa84-7649734/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15527">- Wowa84</a>
 
 ### Acknowledgements
 
 -   My Mentor for continuous helpful feedback.
 
 -   Tutor support at Code Institute for their support.
-
-
-
-
-
-
-
-
-
-
-
-.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-
