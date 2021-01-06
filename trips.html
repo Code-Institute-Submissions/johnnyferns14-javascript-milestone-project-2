@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips - Milestone Project 2</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel ="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 
 <body>
@@ -14,71 +17,61 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-bg">
         <a class="navbar-brand" href="#">Travel Hub</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-us">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
                 </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-us">Contact</a>
-              </li>
-          </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-us">Contact</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
-      <!--END OF NAVIGATION BAR-->
+    <!--END OF NAVIGATION BAR-->
 
-      
-        <!--HOMEPAGE START-->
+
+    <!--HOMEPAGE START-->
 
     <section>
-        <div class="content">
-            <div class="hero-image">
-            <img src="./assets/images/Hero.jpg" alt="travel-heroimage">
-            </div>
-            <div class="search-area">
-                <div class="search-content">
-                    <div class="point-of-travel">
-                        <label id="origin1">Origin: </label>
-                        <input type="text" name="origin" id="origin">
-                        <label id="destination1">Destination: </label>
-                        <input type="text" name="destination" id="destination">
-                        <label id="currency1">Currency </label>
-                        <input type="text" name="currency" id="currency">
-                   </div>
-                    <div class="travel-dates">
-                        <label id="date-dep1">Date of Departure: </label>
-                        <input type="text" name="date-dep" id="date-dep">
-                    
-                        <button id="confirm">Confirm</button>
-                    
-                    </div>
+        <form>
+            <div class="form-row">
+                <div class="col-7">
+                    <input type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="State">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Zip">
                 </div>
             </div>
-        </div>
+        </form>
 
 
         <div class="search-results" id="flight-results">
-            
+
         </div>
 
 
-      </section>
+    </section>
 
-             <footer class="page-footer footercustom">
+    <footer class="page-footer footercustom">
 
-            <div class="container">
+        <div class="container">
             <div class="row">
-  
+
                 <div class="col-md-12">
                     <div class="flex-center text-footer">
                         <p>For future events and updates, follow us on: </p>
@@ -89,39 +82,39 @@
                             </a>
                             <!-- Twitter -->
                             <a class="tw-ic" href="https://www.twitter.com" target="_blank">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
                             <!--Linkedin -->
                             <a class="li-ic" href="https://www.linkedin.com" target="_blank">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <!--Instagram-->
                             <a class="ins-ic" href="https://www.instagram.com" target="_blank">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                         </div>
-                        </div>
-                        </div>
-                        <!-- Grid column -->
-                
                     </div>
-                    <!-- Grid row-->
-                
-                    </div>
-                    <!-- Footer Elements -->
-                
-    
-    <div class="footer-copyright text-center py-3 cust-text"> Created by::
-      <a href="https://google.com">johnnyferns</a>
-    </div>
-    
-  
-  </footer>
-    
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+
+        <div class="footer-copyright text-center py-3 cust-text"> Created by::
+            <a href="https://google.com">johnnyferns</a>
+        </div>
+
+
+    </footer>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/JS/trips.js"></script>
 
-    <script src="app.js"></script>
-
-<script src="./assets//JS/trips.js"></script>
 </body>
+
 </html>
