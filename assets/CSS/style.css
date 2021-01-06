@@ -111,6 +111,22 @@ h1{
     margin-left: 1rem;
     width: 85%;
 }
+/* TESTIMONIALS */
+.testimonial{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    padding: 0, 5px;
+}
+
+.fl-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
 
 /* SERVICES */
 
