@@ -39,7 +39,8 @@ function displayInfo(quotes) {
         console.log(quote.QuoteId);
         const price = quote.MinPrice;
         const originId = quote.OutboundLeg.OriginId;
-        flights += `<p>${price}${originId}</p>`;
+        const destId = quote.OutboundLeg.DestinationId;
+        flights += `<p>${price} ${originId} ${destId}</p>`;
 
     });
     // $("#flight-results").empty().append(flights);
