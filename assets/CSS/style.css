@@ -112,6 +112,12 @@ h1{
     width: 85%;
 }
 /* TESTIMONIALS */
+
+
+.intro{
+    margin: 0, 10px;
+}
+
 .testimonial{
     display: flex;
     justify-content: space-between;
