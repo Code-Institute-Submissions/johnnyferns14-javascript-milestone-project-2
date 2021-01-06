@@ -184,7 +184,12 @@ h1{
 }
 
 .text-footer a{
-    color: rgb(204, 218, 215);;
+    color: rgb(204, 218, 215);
+    transition: 0.4s;
+}
+
+.text-footer a:hover{
+    transform: translateY(-6px);
 }
 
 
