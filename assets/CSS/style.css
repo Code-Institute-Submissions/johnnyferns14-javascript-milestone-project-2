@@ -170,6 +170,23 @@ h1{
     width: 100%;
 }
 
+.cust-text a{
+    text-align: center;
+}
+
+.cust-text a{
+    color:  rgb(204, 218, 215);
+}
+
+.icons-center{
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-footer a{
+    color: rgb(204, 218, 215);;
+}
+
 
 @media screen and (max-width:697px){
 
