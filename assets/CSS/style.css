@@ -250,6 +250,14 @@ h1{
     transform: translateY(-6px);
 }
 
+#currency{
+    text-transform: uppercase;
+}
+
+#origin, #destination{
+    text-transform: capitalize;
+}
+
 
 @media screen and (max-width:697px){
 
