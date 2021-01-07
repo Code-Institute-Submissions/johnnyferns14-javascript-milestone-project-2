@@ -132,6 +132,25 @@ h1{
 }
 
 
+/* Hero image CSS */
+
+.hero-image{
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+
+}
+.hero-image img{
+    width: 100%;
+}
+
+.form-row{
+    padding-bottom: 1rem;
+}
+
+
+
+
 
 
 /* SERVICES */
