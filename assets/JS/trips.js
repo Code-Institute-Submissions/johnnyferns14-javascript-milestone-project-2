@@ -29,25 +29,28 @@ function getPlace(places) {
 	// $("#flight-results").empty().append(carrName);
 };
 
-function getCarrier(carrierName) {
+function displayInfo(carrierName, quotes, places) {
 	let carrName = "";
 	carrierName.forEach(function (carrier) {
-		//DISPLAY THE RESULT OF EACH ITEM IN THE CARRIERID ARRAY
-		console.log(carrier);
-		const id = carrier.CarrierId;
-		const name = carrier.Name;
-		carrName += `<p>Your search returned the following results:
+        //DISPLAY THE RESULT OF EACH ITEM IN THE CARRIERID ARRAY
+		// console.log(carrier);
+		const CarrierId = carrier.CarrierId;
+        const name = carrier.Name;
+        const quote = quotes.find(quote => quote.OutboundLeg.CarrierIds.includes(CarrierId))
+        const place = places.find(item => item.PlaceId === quote.OutboundLeg.DestinationId)
+        // console.log(quote);
+		carrName += `
         
          <div class="card col-md-8 col-sm-12";">
                 <div class="card-body">
                     <div class="result-wrapper">
                             <div class="place-info">
-                                <p>LHR</p><i class="fa fa-arrow-right" aria-hidden="true"></i><p>BOM</p>
-                                <p>DATETIME</p>
+                                <p>LHR</p><i class="fa fa-arrow-right" aria-hidden="true"></i><p>${place.CityName}${place.IataCode}</p>
+                                <p>${quote.OutboundLeg.DepartureDate}</p>
                             </div>
           
                             <div class="flight-info">${name}</div>
-                            <div class="flight-price">PRICE</div>
+                            <div class="flight-price">${quote.MinPrice}</div>
                     </div>
                 </div>
             </div>`
@@ -59,23 +62,7 @@ function getCarrier(carrierName) {
 	$("#flight-results").empty().append(carrName);
 };
 
-function displayInfo(quotes) {
-	let flights = "";
-	quotes.forEach(function (quote) {
-		//DISPLAY THE RESULT OF EACH ITEM IN THE QUOTEID ARRAY
-		console.log(quote);
-		console.log(quote.QuoteId);
-		const price = quote.MinPrice;
-		const originId = quote.OutboundLeg.OriginId;
-		const destId = quote.OutboundLeg.DestinationId;
-        flights += `<p>Your search returned the following results:
-        
-    
-    </p><p>${price}${originId}</p>`;
 
-	});
-	// $("#flight-results").empty().append(flights);
-};
 //  FETCH REST API
 
 async function getFlightData(fetchId) {
@@ -91,12 +78,10 @@ async function getFlightData(fetchId) {
 	const quotes = data.Quotes;
 	const carrierNames = data.Carriers;
 	const places = data.Places;
-	console.log(places)
+	console.log([quotes, carrierNames, places])
 
 
-	getPlace(places);
-	getCarrier(carrierNames);
-	displayInfo(quotes);
+	displayInfo(carrierNames, quotes, places);
 
 
 };
