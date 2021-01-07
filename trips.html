@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips - Milestone Project 2</title>
-
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
@@ -50,28 +52,26 @@
         <div class="hero-image">
             <img src="./assets/images/plane.jpg" alt="travel-heroimage">
         </div>
-        <div class="form-ctrl">
-        <form>
-            <div class="form-row">
-                <div class="col-md-3 col-sm-6">
-                    <input type="text" id="origin" class="form-control" placeholder="Origin">
+        
+        <div class="search-area">
+                <div class="search-content">
+                    <div class="point-of-travel">
+                    <label id="origin1">Origin: </label>
+                    <input type="text" name="origin" id="origin">
+                    <label id="destination1">Destination: </label>
+                    <input type="text" name="destination" id="destination">
+                    <label id="currency1">Currency </label>
+                    <input type="text" name="currency" id="currency">
+                   
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <input type="text" id="destination" class="form-control" placeholder="Destination">
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <input type="text" id="date-dep" class="form-control" placeholder="Departure (yyyy/mm/dd)">
-                </div>
-                <div class="col-md-2 col-sm-6">
-                    <input type="text" id="currency" class="form-control" placeholder="Currency">
-                </div>
-            
-                <div class="btn-col">
-                    <button id="confirm" class="btn btn-primary">Search</button>
+                <div class="travel-dates">
+                    <label id="date-dep1">Date of Departure: </label>
+                    <input type="text" name="date-dep" id="date-dep">
+                    <button id="confirm">Confirm</button>
+                    
                 </div>
             </div>
-        </form>
-        </div>
+        
 
 
         <div class="search-results" id="flight-results">
@@ -126,8 +126,7 @@
     </footer>
 
     
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
     <script src="./assets/JS/trips.js"></script>
 
 </body>
