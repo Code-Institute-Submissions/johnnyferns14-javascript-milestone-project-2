@@ -36,7 +36,24 @@ function getCarrier(carrierName) {
 		console.log(carrier);
 		const id = carrier.CarrierId;
 		const name = carrier.Name;
-		carrName += `<p>${id}${name}</p>`;
+		carrName += `<p>Your search returned the following results:
+        
+         <div class="card col-md-8 col-sm-12";">
+                <div class="card-body">
+                    <div class="result-wrapper">
+                            <div class="place-info">
+                                <p>LHR</p><i class="fa fa-arrow-right" aria-hidden="true"></i><p>BOM</p>
+                                <p>DATETIME</p>
+                            </div>
+          
+                            <div class="flight-info">${name}</div>
+                            <div class="flight-price">PRICE</div>
+                    </div>
+                </div>
+            </div>`
+
+
+        
 
 	});
 	$("#flight-results").empty().append(carrName);
@@ -51,7 +68,10 @@ function displayInfo(quotes) {
 		const price = quote.MinPrice;
 		const originId = quote.OutboundLeg.OriginId;
 		const destId = quote.OutboundLeg.DestinationId;
-		flights += `<p>${price}${originId}</p>`;
+        flights += `<p>Your search returned the following results:
+        
+    
+    </p><p>${price}${originId}</p>`;
 
 	});
 	// $("#flight-results").empty().append(flights);
