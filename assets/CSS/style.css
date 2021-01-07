@@ -255,7 +255,7 @@ h1{
 }
 
 #origin, #destination{
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 

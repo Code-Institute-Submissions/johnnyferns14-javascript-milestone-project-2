@@ -17,17 +17,6 @@ $(document).ready(function () {
 	});
 });
 
-function getPlace(places) {
-	
-	places.forEach(function (place) {
-		//DISPLAY THE RESULT OF EACH ITEM IN THE PLACE ARRAY
-		console.log(place);
-		
-		
-
-	});
-	// $("#flight-results").empty().append(carrName);
-};
 
 function displayInfo(carrierName, quotes, places) {
 	let carrName = "";
@@ -38,7 +27,14 @@ function displayInfo(carrierName, quotes, places) {
         const name = carrier.Name;
         const quote = quotes.find(quote => quote.OutboundLeg.CarrierIds.includes(CarrierId))
         const place = places.find(item => item.PlaceId === quote.OutboundLeg.DestinationId)
-        // console.log(quote);
+        
+        console.log(place.CityName);
+        console.log(place.PlaceId)
+        console.log(quote.OutboundLeg.DestinationId);
+        console.log(quote.OutboundLeg.OriginId);
+
+        
+    
 		carrName += `
         
          <div class="card col-md-8 col-sm-12";">
