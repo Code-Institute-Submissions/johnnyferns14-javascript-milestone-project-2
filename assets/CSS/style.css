@@ -144,9 +144,26 @@ h1{
     width: 100%;
 }
 
+.form-ctrl{
+    display: block;
+    text-align: center;
+}
+
+.form-ctrl form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
 .form-row{
     padding-bottom: 1rem;
 }
+
+.btn-col{
+    padding-bottom: 1rem;
+}
+
 
 
 

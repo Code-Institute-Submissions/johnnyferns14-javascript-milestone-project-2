@@ -7,7 +7,6 @@
     <title>Trips - Milestone Project 2</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
@@ -51,29 +50,28 @@
         <div class="hero-image">
             <img src="./assets/images/plane.jpg" alt="travel-heroimage">
         </div>
+        <div class="form-ctrl">
         <form>
             <div class="form-row">
-                <div class="col-4">
+                <div class="col-md-3 col-sm-6">
                     <input type="text" class="form-control" placeholder="Origin">
                 </div>
-                <div class="col-4">
+                <div class="col-md-3 col-sm-6">
                     <input type="text" class="form-control" placeholder="Desstination">
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col-4">
+                <div class="col-md-3 col-sm-6">
                     <input type="text" class="form-control" placeholder="Date of Departure">
                 </div>
-                <div class="col-4">
+                <div class="col-md-2col-sm-6">
                     <input type="text" class="form-control" placeholder="Currency">
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="col-4">
-                    <button id="confirm">Confirm</button>
+            
+                <div class="btn-col">
+                    <button id="confirm" class="btn btn-primary btn-center">Search</button>
                 </div>
             </div>
         </form>
+        </div>
 
 
         <div class="search-results" id="flight-results">
@@ -127,8 +125,9 @@
 
     </footer>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="./assets/JS/trips.js"></script>
 
 </body>
