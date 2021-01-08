@@ -96,14 +96,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
         1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
         2. The content on the page is appropriately placed so as to give a good visual feedback to the user.
-        3. On the Contact Us Page, after a form response is submitted, an alert shows up stsating that their submission was a success.
+        3. On the Contact Us Page, after a form response is submitted, an alert shows up stating that their submission was a success.
 
     3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
         1. Once the new visitor has read the About Us and services section, they will move on to the Testimonials section which give the users an understanding of what our esteemed clients think of us.
         2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer which have a slow transition when hovered over.
         3. When clicked, the user is directed to the respective homepage of that site.
         4. There is a 'Trips' section in the navigation bar which when clicked, will take the user to the trips page.
-        5. 
+        5. Here, the user will get the flight details such as origun, destination, departure date, flight and the price.
 
 -   #### Returning Visitor Goals
    
@@ -115,25 +115,17 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
         5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
 
-    3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-        1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-        2. Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-        3. If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
-
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
+    1. As a Frequent User, I want to check to keep checking for any possible updates to the site.
 
-        1. The user would already be comfortable with the website layout and can easily click the banner message.
+        1. The user would be able to get updates since they will have submitted details through the contact form.
 
-    2. As a Frequent User, I want to check to see if there are any new blog posts.
+    2. As a Frequent User, I want to check to see if there are any new blog posts regarding travel information.
 
-        1. The user would already be comfortable with the website layout and can easily click the blog link
+        1. All updates will be made in the social network pages which is already integrated in the footer.
 
-    3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-        1. At the bottom of every page their is a footer which content is consistent throughout all pages.
-        2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-        3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
+    
 
 ### Further Testing
 
@@ -145,9 +137,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   Due to limited functionality of the api, the user will need to enter the IATA code in the origin and destination inputs and the currency code (in caps) in the currency input.
 
 ## Deployment
 
