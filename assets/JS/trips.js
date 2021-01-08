@@ -5,7 +5,6 @@ $(document).ready(function () {
     // EVENT ON-CLICK
     // this is a jquery function. Button clicked will give the result on the webpage
 	$("#confirm").click(function () {
-		$(this).html("Search");
 		let originplace = $("#origin").val();
 		let destinationplace = $("#destination").val();
 		let outboundpartialdate = $("#date-dep").val();
@@ -32,33 +31,23 @@ function displayInfo(carrierName, quotes, places) {
         const destplace = places.find(item => item.PlaceId === quote.OutboundLeg.DestinationId)
         const origplace = places.find(item1 =>item1.PlaceId === quote.OutboundLeg.OriginId)
          
-        
-        console.log(destplace.CityName);
-        console.log(destplace.PlaceId);
-        console.log(origplace.CityName);
-        console.log(origplace.PlaceId);
-       // console.log(quote.OutboundLeg.DestinationId);
-        //console.log(quote.OutboundLeg.OriginId);
-
-        
+       
     
 		carrName += `
         
-         <div class="container">
+         <div class="container cust-cont">
                 <div class="row row-border">
-                    <div class="col-lg-6 fl-wrap">
+                    <div class="col-md-7 fl-wrap">
                             <div class="place-info fl-wrap">
                                 <div><p>${origplace.CityName} (${origplace.IataCode})</p></div>
                                 <div><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
-                                <div><p>${destplace.CityName} (${destplace.IataCode})</p>
-                            </div>
+                                <div><p>${destplace.CityName} (${destplace.IataCode})</p></div>
 
-                                <div>
-                                <p>${quote.OutboundLeg.DepartureDate}</p>
-                                </div>
+                                <div><p>${quote.OutboundLeg.DepartureDate}</p></div>
+                            </div>
           
-                            <div class="col-lg-3">${name}</div>
-                            <div class="col-lg-3">${quote.MinPrice}</div>
+                            <div class="col-md-3">${name}</div>
+                            <div class="col-md-1">${quote.MinPrice}</div>
                     </div>
                 </div>
             </div>`
