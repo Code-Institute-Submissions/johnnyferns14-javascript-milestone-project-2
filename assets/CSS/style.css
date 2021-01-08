@@ -19,7 +19,6 @@ section{
 .vid-placeholder{
     position: relative;
     height: 500px;
-    border-color: 5px solid rgb(164, 97, 226);
     overflow: hidden;
     margin-top: 3.2rem;
 }
@@ -93,14 +92,14 @@ h1{
 
 
 .intro{
-    margin: 0, 10px;
+    margin: 0px 10px;
 }
 
 .cardformat{
     display: flex;
     justify-content: center;
     margin: 25px;
-    padding: 0, 5px;
+    padding: 0px 5px;
 }
 
 .img-circle{
@@ -294,8 +293,12 @@ h1{
         
         padding-bottom: 2rem;
     }
-.cardformat{
+    .cardformat{
     display:block;
-}
+    
+
+    }
+
+
 
 }
