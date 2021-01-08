@@ -1,11 +1,11 @@
 
 <h1 align="center">Travel Hub Website</h1>
 
-[View the live project here.](https://johnnyferns14.github.io/javascript-milestone-project-2/https://johnnyferns14.github.io/javascript-milestone-project-2/)
+[View the live project here.](https://johnnyferns14.github.io/javascript-milestone-project-2/)
 
 The site with travel information relating to flights.
  
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+<h2 align="center"><img src="./assets/images/Travelhub.png"></h2>
 
 ## User Experience (UX)
 
@@ -38,11 +38,11 @@ The site with travel information relating to flights.
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
+    -   Home Page Wireframe - [View](https://github.com/johnnyferns14/javascript-milestone-project-2/blob/master/assets/PDF/Figma%20Homepage%20wireframe.pdf)
 
-    -   Mobile Wireframe - [View](https://github.com/)
+    -   Mobile Wireframe - [View](https://github.com/johnnyferns14/javascript-milestone-project-2/blob/master/assets/PDF/Mobile%20wireframe.pdf)
 
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+    - Information: The above are wireframes that were designed in the initial process. But as the project went on, changes were made to make every content look better and more attractive.
 
 ## Features
 
@@ -89,33 +89,29 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Below the navigation bar, is a video background that gives a good sense of communication.
+        2. The full aspect of the website is shown by the video - depicts a travel scene.
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
         1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
+        2. The content on the page is appropriately placed so as to give a good visual feedback to the user.
+        3. On the Contact Us Page, after a form response is submitted, an alert shows up stsating that their submission was a success.
 
     3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+        1. Once the new visitor has read the About Us and services section, they will move on to the Testimonials section which give the users an understanding of what our esteemed clients think of us.
+        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer which have a slow transition when hovered over.
+        3. When clicked, the user is directed to the respective homepage of that site.
+        4. There is a 'Trips' section in the navigation bar which when clicked, will take the user to the trips page.
+        5. 
 
 -   #### Returning Visitor Goals
-
-    1. As a Returning Visitor, I want to find the new programming challenges or hackathons.
-
-        1. These are clearly shown in the banner message.
-        2. They will be directed to a page with another hero image and call to action.
-
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
+   
+    1. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
 
         1. The navigation bar clearly highlights the "Contact Us" Page.
-        2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-        3. The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
+        2. Here they can fill out the form on the page.
+        3. The footer contains links to the organisations Facebook, Twitter, Linkedin and Instagram page.
         4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
         5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
 
