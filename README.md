@@ -137,7 +137,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   Due to limited functionality of the api, the user will need to enter the IATA code in the origin and destination inputs and the currency code (in caps) in the currency input.
+-   Due to limited functionality of the api, the user will need to enter the IATA code or Country Code in the origin and destination inputs and the currency code (in caps) in the currency input.
 
 ## Deployment
 
