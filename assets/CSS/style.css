@@ -63,30 +63,8 @@ section{
     color: rgba(204, 218, 215,.85);
 }
 
-.trip-btn button{
-    font-family: 'BALOO PAAJI 2';
-    margin-top: 4px;
-    background-color: rgb(204, 218, 215);
-    border-radius: 25px;
-    padding-top: 2px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
 
-.trip-btn button:hover{
-    background-color: rgb(12, 93, 131);
-    
-}
 
-.trip-btn button a{
-    color: rgb(12, 93, 131);
-}
-
-.trip-btn button a:hover{
-    text-decoration: none;
-    color: rgb(204, 218, 215);
-    
-}
 
 
 h1{
