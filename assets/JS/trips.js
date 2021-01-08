@@ -1,6 +1,9 @@
-
+// This function gets all contents 
+// ready on the page before running 
+// the below scripts
 $(document).ready(function () {
-	// EVENT ON-CLICK
+    // EVENT ON-CLICK
+    // this is a jquery function. Button clicked will give the result on the webpage
 	$("#confirm").click(function () {
 		$(this).html("Search");
 		let originplace = $("#origin").val();
@@ -17,7 +20,8 @@ $(document).ready(function () {
 	});
 });
 
-
+// this function displays
+// info into the HTML page
 function displayInfo(carrierName, quotes, places) {
 	let carrName = "";
 	carrierName.forEach(function (carrier) {
@@ -60,6 +64,7 @@ function displayInfo(carrierName, quotes, places) {
 
 
 //  FETCH REST API
+// fetches JSON data from the api
 
 async function getFlightData(fetchId) {
 	const res = await fetch(fetchId, {
