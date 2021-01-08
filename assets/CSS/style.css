@@ -291,6 +291,12 @@ h1{
     text-transform: uppercase;
 }
 
+.no-margin{
+    margin-bottom: 0;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
 
 
 

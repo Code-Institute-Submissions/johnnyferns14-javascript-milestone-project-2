@@ -42,13 +42,12 @@ function displayInfo(carrierName, quotes, places) {
                                 <div><p>${origplace.CityName} (${origplace.IataCode})</p></div>
                                 <div><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                                 <div><p>${destplace.CityName} (${destplace.IataCode})</p></div>
-
-                                <div><p>${quote.OutboundLeg.DepartureDate}</p></div>
                             </div>
           
                             <div class="col-md-3">${name}</div>
                             <div class="col-md-1">${quote.MinPrice}</div>
                     </div>
+                    <div><p class = "no-margin">${quote.OutboundLeg.DepartureDate}</p></div>
                 </div>
             </div>`
 
