@@ -120,7 +120,7 @@ h1{
 
 .cardformat{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 25px;
     padding: 0, 5px;
 }
@@ -198,7 +198,7 @@ h1{
 }
 .card-flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     padding-top: 0;
@@ -316,4 +316,8 @@ h1{
         
         padding-bottom: 2rem;
     }
+.cardformat{
+    display:block;
+}
+
 }
