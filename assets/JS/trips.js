@@ -13,7 +13,6 @@ $(document).ready(function () {
 
 		let fetchId = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/${currency}/en-US/${originplace}-sky/${destinationplace}-sky/${outboundpartialdate}`;
 
-		let fetchId1 = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/UK/GBP/en-GB/?query=${originplace}`;
 
 		getFlightData(fetchId);
 		
@@ -30,22 +29,26 @@ function displayInfo(carrierName, quotes, places) {
 		const CarrierId = carrier.CarrierId;
         const name = carrier.Name;
         const quote = quotes.find(quote => quote.OutboundLeg.CarrierIds.includes(CarrierId))
-        const place = places.find(item => item.PlaceId === quote.OutboundLeg.DestinationId)
+        const destplace = places.find(item => item.PlaceId === quote.OutboundLeg.DestinationId)
+        const origplace = places.find(item1 =>item1.PlaceId === quote.OutboundLeg.OriginId)
+         
         
-        console.log(place.CityName);
-        console.log(place.PlaceId)
-        console.log(quote.OutboundLeg.DestinationId);
-        console.log(quote.OutboundLeg.OriginId);
+        console.log(destplace.CityName);
+        console.log(destplace.PlaceId);
+        console.log(origplace.CityName);
+        console.log(origplace.PlaceId);
+       // console.log(quote.OutboundLeg.DestinationId);
+        //console.log(quote.OutboundLeg.OriginId);
 
         
     
 		carrName += `
         
-         <div class="card col-md-8 col-sm-12";">
+         <div class="card col-md-8 col-sm-6";">
                 <div class="card-body">
                     <div class="result-wrapper">
                             <div class="place-info">
-                                <p>LHR</p><i class="fa fa-arrow-right" aria-hidden="true"></i><p>${place.CityName}${place.IataCode}</p>
+                                <p>${origplace.CityName} (${origplace.IataCode}) </p><i class="fa fa-arrow-right" aria-hidden="true"></i><p>${destplace.CityName} (${destplace.IataCode})</p>
                                 <p>${quote.OutboundLeg.DepartureDate}</p>
                             </div>
           
