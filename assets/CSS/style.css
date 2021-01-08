@@ -118,11 +118,29 @@ h1{
     margin: 0, 10px;
 }
 
-.testimonial{
+.cardformat{
     display: flex;
     justify-content: space-between;
     margin: 25px;
     padding: 0, 5px;
+}
+
+.img-circle{
+    position: relative;
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+
+}
+
+.img-circle img{
+    width: 60%;
+    height: auto;
+    left: 1rem;
+    position: absolute;
+
 }
 
 .fl-wrapper{

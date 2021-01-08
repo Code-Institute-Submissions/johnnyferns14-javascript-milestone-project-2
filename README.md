@@ -218,7 +218,9 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Media
 
--   Images were found freely from the internet. The background video was downloaded from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15527">Pixabay</a> work of <a href="https://pixabay.com/users/wowa84-7649734/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15527">- Wowa84</a>
+-   Images were found freely from the internet. For the testimonials, cartoon images were taken from [Cartoonist website](https://thecartoonist.me/)
+
+-  The background video was downloaded from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15527">Pixabay</a> work of <a href="https://pixabay.com/users/wowa84-7649734/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15527">- Wowa84</a>
 
 ### Acknowledgements
 
