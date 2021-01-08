@@ -44,16 +44,21 @@ function displayInfo(carrierName, quotes, places) {
     
 		carrName += `
         
-         <div class="card col-md-8 col-sm-6";">
-                <div class="card-body">
-                    <div class="result-wrapper">
-                            <div class="place-info">
-                                <p>${origplace.CityName} (${origplace.IataCode}) </p><i class="fa fa-arrow-right" aria-hidden="true"></i><p>${destplace.CityName} (${destplace.IataCode})</p>
-                                <p>${quote.OutboundLeg.DepartureDate}</p>
+         <div class="container">
+                <div class="row row-border">
+                    <div class="col-lg-6 fl-wrap">
+                            <div class="place-info fl-wrap">
+                                <div><p>${origplace.CityName} (${origplace.IataCode})</p></div>
+                                <div><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                                <div><p>${destplace.CityName} (${destplace.IataCode})</p>
                             </div>
+
+                                <div>
+                                <p>${quote.OutboundLeg.DepartureDate}</p>
+                                </div>
           
-                            <div class="flight-info">${name}</div>
-                            <div class="flight-price">${quote.MinPrice}</div>
+                            <div class="col-lg-3">${name}</div>
+                            <div class="col-lg-3">${quote.MinPrice}</div>
                     </div>
                 </div>
             </div>`
