@@ -1,7 +1,3 @@
-(function () {
-    emailjs.init("user_MkCT1xIxJ2h1sitIi1aDu");
-})();
-
 function sendMail(contactDetails) {
 
     let templateParams = {
