@@ -63,9 +63,6 @@ section{
 }
 
 
-
-
-
 h1{
     text-align: center;
 }
@@ -216,13 +213,6 @@ h1{
     padding-top: 20px;
 }
 
-
-/* TRIPS */
-
-.hero-image{
-    width: 100%;
-}
-
 .cust-text a{
     text-align: center;
 }
@@ -245,6 +235,29 @@ h1{
     transform: translateY(-6px);
 }
 
+
+
+
+
+/* TRIPS */
+
+.hero-image{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.search-content{
+    display: inline-block;
+    /* justify-content: flex-start;
+    align-items: center; */
+}
+.point-of-travel, .travel-feature{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
 #currency{
     text-transform: uppercase;
 }
@@ -254,17 +267,7 @@ h1{
 }
 
 
-.result-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.place-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 @media screen and (max-width:697px){
