@@ -24,7 +24,6 @@ function displayInfo(carrierName, quotes, places) {
     let carrName = "";
     carrierName.forEach(function (carrier) {
         //DISPLAY THE RESULT OF EACH ITEM IN THE CARRIERID ARRAY
-        // console.log(carrier);
         const CarrierId = carrier.CarrierId;
         const name = carrier.Name;
         const quote = quotes.find(quote => quote.OutboundLeg.CarrierIds.includes(CarrierId))
@@ -38,12 +37,17 @@ function displayInfo(carrierName, quotes, places) {
         
          <div class="container">
                 <div class="row row-border">
-                    <div class="col-md-5 fl-wrap">    
-                            <div class="place-info fl-wrap">
-                                <div><p>${origplace.CityName} (${origplace.IataCode})</p></div>
-                                <div><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
-                                <div><p>${destplace.CityName} (${destplace.IataCode})</p></div>
-                            </div>
+                    <div class="col-md-5 fl-wrap">
+                    <h3>Flight Route</h3>                        
+                    </div>
+                    <div class="col-md-2"><h3>Flight Name</h3></div>
+                    <div class ="col-md-3"<h3>Date of Travel</h3></h3></div>
+                    <div class="col-md-2"><h3>Price</h3></div> 
+                    <div class="col-md-5 fl-wrap">
+                        <div><p>${origplace.CityName} (${origplace.IataCode})</p></div>
+                        <div class ="icon-margin"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div><p>${destplace.CityName} (${destplace.IataCode})</p></div>
+                    
           
                             
                     </div>
@@ -77,7 +81,6 @@ async function getFlightData(fetchId) {
     const quotes = data.Quotes;
     const carrierNames = data.Carriers;
     const places = data.Places;
-    console.log([quotes, carrierNames, places])
 
 
     displayInfo(carrierNames, quotes, places);
