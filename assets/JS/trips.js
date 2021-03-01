@@ -4,58 +4,60 @@
 $(document).ready(function () {
     // EVENT ON-CLICK
     // this is a jquery function. Button clicked will give the result on the webpage
-	$("#confirm").click(function () {
-		let originplace = $("#origin").val();
-		let destinationplace = $("#destination").val();
-		let outboundpartialdate = $("#date-dep").val();
-		let currency = $("#currency").val();
+    $("#confirm").click(function () {
+        let originplace = $("#origin").val();
+        let destinationplace = $("#destination").val();
+        let outboundpartialdate = $("#date-dep").val();
+        let currency = $("#currency").val();
 
-		let fetchId = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/${currency}/en-US/${originplace}-sky/${destinationplace}-sky/${outboundpartialdate}`;
+        let fetchId = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/${currency}/en-US/${originplace}-sky/${destinationplace}-sky/${outboundpartialdate}`;
 
 
-		getFlightData(fetchId);
-		
-	});
+        getFlightData(fetchId);
+
+    });
 });
 
 // this function displays
 // info into the HTML page
 function displayInfo(carrierName, quotes, places) {
-	let carrName = "";
-	carrierName.forEach(function (carrier) {
+    let carrName = "";
+    carrierName.forEach(function (carrier) {
         //DISPLAY THE RESULT OF EACH ITEM IN THE CARRIERID ARRAY
-		// console.log(carrier);
-		const CarrierId = carrier.CarrierId;
+        // console.log(carrier);
+        const CarrierId = carrier.CarrierId;
         const name = carrier.Name;
         const quote = quotes.find(quote => quote.OutboundLeg.CarrierIds.includes(CarrierId))
         const destplace = places.find(item => item.PlaceId === quote.OutboundLeg.DestinationId)
-        const origplace = places.find(item1 =>item1.PlaceId === quote.OutboundLeg.OriginId)
-         
-       
-    
-		carrName += `
+        const origplace = places.find(item1 => item1.PlaceId === quote.OutboundLeg.OriginId)
+        const depDate = quote.OutboundLeg.DepartureDate.slice(0, 10)
+
+
+
+        carrName += `
         
-         <div class="container cust-cont">
+         <div class="container">
                 <div class="row row-border">
-                    <div class="col-md-7 fl-wrap">
+                    <div class="col-md-5 fl-wrap">    
                             <div class="place-info fl-wrap">
                                 <div><p>${origplace.CityName} (${origplace.IataCode})</p></div>
                                 <div><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                                 <div><p>${destplace.CityName} (${destplace.IataCode})</p></div>
                             </div>
           
-                            <div class="col-md-3">${name}</div>
-                            <div class="col-md-1">${quote.MinPrice}</div>
+                            
                     </div>
-                    <div><p class = "no-margin">${quote.OutboundLeg.DepartureDate}</p></div>
+                    <div class="col-md-3">${name}</div>
+                    <div class ="col-md-3"<p>${depDate}</p></div>
+                    <div class="col-md-1">${quote.MinPrice}</div>                   
                 </div>
             </div>`
 
 
-        
 
-	});
-	$("#flight-results").empty().append(carrName);
+
+    });
+    $("#flight-results").empty().append(carrName);
 };
 
 
@@ -63,22 +65,22 @@ function displayInfo(carrierName, quotes, places) {
 // fetches JSON data from the api
 
 async function getFlightData(fetchId) {
-	const res = await fetch(fetchId, {
-		"method": "GET",
-		"headers": {
-			"x-rapidapi-key": "dd9b94074fmshac9241d7bf4be30p1d7aa0jsnea369d8adbc2",
-			"x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com"
-		}
-	});
-	// GET JSON DATA
-	const data = await res.json();
-	const quotes = data.Quotes;
-	const carrierNames = data.Carriers;
-	const places = data.Places;
-	console.log([quotes, carrierNames, places])
+    const res = await fetch(fetchId, {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "dd9b94074fmshac9241d7bf4be30p1d7aa0jsnea369d8adbc2",
+            "x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com"
+        }
+    });
+    // GET JSON DATA
+    const data = await res.json();
+    const quotes = data.Quotes;
+    const carrierNames = data.Carriers;
+    const places = data.Places;
+    console.log([quotes, carrierNames, places])
 
 
-	displayInfo(carrierNames, quotes, places);
+    displayInfo(carrierNames, quotes, places);
 
 
 };
