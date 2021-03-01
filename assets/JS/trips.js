@@ -37,13 +37,13 @@ function displayInfo(carrierName, quotes, places) {
         
          <div class="container">
                 <div class="row row-border">
-                    <div class="col-md-5 fl-wrap">
-                    <h3>Flight Route</h3>                        
+                    <div class="col-md-4 fl-wrap">
+                    <h4>Flight Route</h4>                        
                     </div>
-                    <div class="col-md-2"><h3>Flight Name</h3></div>
-                    <div class ="col-md-3"<h3>Date of Travel</h3></h3></div>
-                    <div class="col-md-2"><h3>Price</h3></div> 
-                    <div class="col-md-5 fl-wrap">
+                    <div class="col-md-4"><h4>Flight Name</h4></div>
+                    <div class ="col-md-4"><h4>Date of Travel</h4></h3></div>
+                    <div class="col-md-4"><h4>Price</h4></div> 
+                    <div class="col-md-4 fl-wrap">
                         <div><p>${origplace.CityName} (${origplace.IataCode})</p></div>
                         <div class ="icon-margin"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                         <div><p>${destplace.CityName} (${destplace.IataCode})</p></div>
@@ -51,9 +51,9 @@ function displayInfo(carrierName, quotes, places) {
           
                             
                     </div>
-                    <div class="col-md-3">${name}</div>
-                    <div class ="col-md-3"<p>${depDate}</p></div>
-                    <div class="col-md-1">${quote.MinPrice}</div>                   
+                    <div class="col-md-4">${name}</div>
+                    <div class ="col-md-4"<p>${depDate}</p></div>
+                    <div class="col-md-4">${quote.MinPrice}</div>                   
                 </div>
             </div>`
 
