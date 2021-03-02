@@ -262,6 +262,10 @@ h1{
     text-align: center;
 }
 
+.display-none{
+    display: none;
+}
+
 .fl-wrap{
     display: flex;
     justify-content: center;

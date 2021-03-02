@@ -188,6 +188,8 @@ $ git clone https://github.com/johnnyferns14/javascript-milestone-project-2
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+## Test Data
+
 ## Credits
 
 ### Code
