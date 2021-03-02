@@ -89,7 +89,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Below the navigation bar, is a video background that gives a good sense of communication.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the section of their choice. Below the navigation bar, is a video background that gives a good sense of communication.
         2. The full aspect of the website is shown by the video - depicts a travel scene.
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
@@ -137,7 +137,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   Due to limited functionality of the api, the user will need to enter the IATA code or Country Code in the origin and destination inputs and the currency code (in caps) in the currency input.
+-   Due to limited functionality of the api, the user will need to enter the IATA code or Country Code in the From & To inputs and the currency code (in caps) in the currency input. Please refer to this [website](https://www.nationsonline.org/oneworld/country_code_list.htm) for the list of country codes.
+- The api shows direct flights between most countries.
 
 ## Deployment
 
