@@ -138,7 +138,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Known Bugs
 
 -   Due to limited functionality of the api, the user will need to enter the IATA code or Country Code in the From & To inputs and the currency code (in caps) in the currency input. Please refer to this [website](https://www.nationsonline.org/oneworld/country_code_list.htm) for the list of country codes.
-- The api shows direct flights between most countries.
+- The api shows only direct flights between major airports of the world.
 
 ## Deployment
 
