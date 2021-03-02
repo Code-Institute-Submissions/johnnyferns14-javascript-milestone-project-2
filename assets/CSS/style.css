@@ -270,11 +270,13 @@ h1{
 
 .row-border{
     border: 1px solid rgb(54, 54, 54);
-    margin: 5px, 0px
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .cust-cont{
-    margin: 10px, 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .icon-margin{
@@ -288,6 +290,10 @@ h1{
 
 #origin, #destination{
     text-transform: uppercase;
+}
+
+.bg-color{
+    background-color:  rgb(12, 93, 131);
 }
 
 
