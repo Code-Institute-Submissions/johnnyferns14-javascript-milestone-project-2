@@ -10,6 +10,7 @@ body{
     font-family: 'Baloo Paaji 2', cursive;
     font-size: 1.2rem;
     font-weight: 400;
+    line-height: 1.3rem;
 }
 
 section{
@@ -20,7 +21,6 @@ section{
     position: relative;
     height: 500px;
     overflow: hidden;
-    margin-top: 3.2rem;
 }
 .img-bg{
     position: absolute;
@@ -310,8 +310,8 @@ h1{
 
 @media screen and (max-width:697px){
 
-    .vid-placeholder{
-        height: 200px;
+    .img-placeholder{
+        height: 100px;
     }
 
 
