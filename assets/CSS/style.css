@@ -16,13 +16,13 @@ section{
     padding-top: 3.2rem;
 }
 
-.vid-placeholder{
+.img-placeholder{
     position: relative;
     height: 500px;
     overflow: hidden;
     margin-top: 3.2rem;
 }
-.vid-bg{
+.img-bg{
     position: absolute;
     width: 100%;
     top: 0;
@@ -261,6 +261,12 @@ h1{
 .confirm-btn{
     text-align: center;
 }
+
+.text-center{
+    margin-top: 1rem;
+    text-align: center;
+}
+
 
 .display-none{
     display: none;
