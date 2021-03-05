@@ -196,6 +196,18 @@ h1{
     margin-top: 2rem;
 }
 
+.flight-info-link{
+    margin-left: 3rem;
+}
+
+.flight-info-link a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 /* FOOTER */
 
 .footercustom {
