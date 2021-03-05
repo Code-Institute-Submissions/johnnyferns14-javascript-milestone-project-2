@@ -34,7 +34,7 @@ The site with travel information relating to flights.
     -   #### Typography
         -   The Baloo Paaji 2 font is the main font used throughout the whole website with cursive as the fallback font in case for any reason the font isn't being imported into the site correctly. The font is unique and gives a feeling of calmness. Also, it is both attractive and appropriate for the travel site.
     -   #### Imagery
-        -   Video of a coast with mountains has been added as the background giving a feel of the place from the sky. It gives a feeling of travel, holiday, excitement.
+        -   The background image of a destination by the beach has been chosen to reflect the calm and serene nature where tourists can feel relaxed and out of all the stress.
 
 *   ### Wireframes
 
@@ -90,7 +90,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
         1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the section of their choice. Below the navigation bar, is a video background that gives a good sense of communication.
-        2. The full aspect of the website is shown by the video - depicts a travel scene.
+        2. The full aspect of the website is shown by the image which just stands out and puts across the actual idea of the website.
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
@@ -103,7 +103,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer which have a slow transition when hovered over.
         3. When clicked, the user is directed to the respective homepage of that site.
         4. There is a 'Trips' section in the navigation bar which when clicked, will take the user to the trips page.
-        5. Here, the user will get the flight details such as origun, destination, departure date, flight and the price.
+        5. Here, the user will get the flight details such as origin, destination, departure date, flight and the price.
 
 -   #### Returning Visitor Goals
    
@@ -131,13 +131,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
--   Due to the limit of info in the api, the users will have to enter the IATA codes instead of place name and currency code in caps. 
+-   Due to the limit of info in the api, the users will have to enter the Country codes instead of place name and currency code in caps. 
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
--   Due to limited functionality of the api, the user will need to enter the IATA code or Country Code in the From & To inputs and the currency code (in caps) in the currency input. Please refer to this [website](https://www.nationsonline.org/oneworld/country_code_list.htm) for the list of country codes.
+-   Due to limited functionality of the api, the user will need to enter the Country Code in the From & To inputs and the currency code (in caps) in the currency input. Please refer to the Aplha 2 column of this [website](https://www.nationsonline.org/oneworld/country_code_list.htm) for the list of country codes.
 - The api shows only direct flights between major airports of the world.
 
 ## Deployment
@@ -190,6 +190,35 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Test Data
 
+The test was conducted for the following countries with their country codes:
+
+- Afghanistan - AF
+- Australia - AU
+- Austria - AT
+- Azerbaijan - AZ
+- Bahamas - BS
+- Bahrain - BH
+- Bangladesh - BD
+- Barbados - BB
+- Belarus - BY
+- India - IN
+- United Kingdom - UK
+- United States - US
+- London - LOND
+- Mumbai - BOM
+
+Most of the country codes in the Alpha 2 column of this [website](https://www.nationsonline.org/oneworld/country_code_list.htm) work with the search results.
+
+Information is entered in the following way:
+
+- From field contains the Origin country code (UK).
+- To field contains the destination Country Code (IN).
+- Currency contains the currency in which the client wants the price (GBP).
+- And the date of travel in the format yyyy-mm-dd.
+
+
+
+
 ## Credits
 
 ### Code
@@ -210,7 +239,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   Images were found freely from the internet. For the testimonials, cartoon images were taken from [Cartoonist website](https://thecartoonist.me/)
 
--  The background video was downloaded from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15527">Pixabay</a> work of <a href="https://pixabay.com/users/wowa84-7649734/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15527">- Wowa84</a>
+-  The background image was freely available from the internet, taken specifically from [WallpaperCave](www.wallpapercave.com)
 
 ### Acknowledgements
 
